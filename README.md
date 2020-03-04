@@ -1,4 +1,4 @@
-<H1>esclib.github.io<H1>
+<H1>esclib.github.io</H1>
 
 This repository describes a reverse-engineered Escort radar detector protocol and provides a utility library to communicate to Escort/Beltronics radar detectors.
 
@@ -21,12 +21,14 @@ XX bytes of packet data (if present). Data bytes always have bit 7 set to 0
 
 Before you can exhange commands, a bi-directional authentication needs to take place. Each side sends a random 64-bit challenge and validates the response. Response is calculated by XTEA-encrypting challenge. There are two static sets of two keys. One set is used for Bluetooth devices, the other is used for newer Bluetooth-LE devices. In each set, there is a device key (radar detector) and client key (mobile app). Here is how authentication works:
 <PRE>
- Once bluetooth connnection is established, client sends a status request command.
- If the channel is not authenticated, the device will respond with an auth request (challenge).
- Client sends auth response to the challenge and the device validates client's response.
- [the following seps are not required for a;ll devices, but it is always good to authenticate the other end]
- Client sends auth request to the device.
- Device responds to client's auth request and the client validates it.
+ - Once bluetooth connnection is established, the client sends a status request command.
+ - If the channel is not authenticated, the device will respond with an auth request (challenge).
+ - Client sends auth response to the challenge and the device validates client's response.
+
+[The following seps are not required for all devices, but it is always good to authenticate the other end]
+
+ - Client sends auth request to the device.
+ - Device responds to client's auth request and the client validates it.
  
  At this point, the communications channel is unlocked and regular commands can be sent and received.
  
