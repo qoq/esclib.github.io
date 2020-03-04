@@ -8,7 +8,7 @@ Please note that this project is licenced under AGPL. This means that if you wan
 
 Escort detectors support two types of communications: over USB and over Bluetooth. Some older devices have a physical serial port, this library does not support them. The current version of the library does not cover USB communications (firmware upgrades, data management). Only bluetooth communications are currently covered.
 
-#Escort BLuetooth IO
+<H1>Escort BLuetooth IO</H1>
 
 Escort detectors use a very packet-based simple protocol. Each packet is formatted as follows:
 byte 0xF5 (start of packet)
