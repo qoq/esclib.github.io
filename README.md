@@ -19,7 +19,7 @@ byte 0x?? Command identifier (bit 7 is always 1 for the command byte)
 XX bytes of packet data (if present). Data bytes always have bit 7 set to 0
 </PRE>
 
-Before you can exhange commands, a bi-directional authentication needs to take place. Each side sends a random 64-bit challenge and validates the response. Response is calculated by XTEA-encrypting challenge. There are two static sets of two keys. One set is used for Bluetooth devices, the other is used for newer Bluetooth-LE devices. In each set, there is a device key (radar detector) and client key (mobile app). Here is how authentication works:
+Before you can exhange commands, a bi-directional authentication needs to take place. Each side sends a random 64-bit challenge and validates the response. Response is calculated by XTEA-encrypting the received challenge. There are two sets of two static encryption keys. One set is used for Bluetooth devices, the other is used for newer Bluetooth-LE devices. In each set, there is a device key (used by radar detector) and client key (used by mobile app). Here is how authentication works:
 <PRE>
  - Once bluetooth connnection is established, the client sends a status request command.
  - If the channel is not authenticated, the device will respond with an auth request (challenge).
@@ -33,3 +33,5 @@ Before you can exhange commands, a bi-directional authentication needs to take p
  At this point, the communications channel is unlocked and regular commands can be sent and received.
  
 </PRE>
+
+See source code for more details
