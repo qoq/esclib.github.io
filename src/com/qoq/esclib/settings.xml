@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="prefs_01_sensitivity" type="list">
+        <item>Auto</item>
+        <item>AutoNoX</item>
+        <item>City</item>
+        <item>CityLoX</item>
+        <item>CityNoX</item>
+        <item>Highway</item>
+    </string-array>
+    <string-array name="prefs_02_brightness" type="list">
+        <item>Dark</item>
+        <item>Minimum</item>
+        <item>Medium</item>
+        <item>Maximum</item>
+        <item>Auto</item>
+        <item>Last</item>
+    </string-array>
+    <string-array name="prefs_03_darkmode" type="list">
+        <item>Standard</item>
+        <item>Full</item>
+    </string-array>
+    <string-array name="prefs_04_pilot" type="list">
+        <item>Full Word</item>
+        <item>Single Letter</item>
+        <item>Letter Scanning Dot</item>
+        <item>Symbol</item>
+        <item>Symbol Scanning Dot</item>
+        <item>Scanning Symbol</item>
+        <item>Vehicle Voltage</item>
+        <item>Vehicle Speed</item>
+        <item>Compass</item>
+        <item>Speed &amp; Compass</item>
+        <item>Scanning Bar</item>
+    </string-array>
+    <string-array name="prefs_05_poweronseq" type="list">
+        <item>Standard</item>
+        <item>Abbreviated</item>
+    </string-array>
+    <string-array name="prefs_06_meter" type="list">
+        <item>Standard</item>
+        <item>Expert</item>
+        <item>Spec</item>
+        <item>Simple</item>
+        <item>Standard FR1</item>
+        <item>Standard FR2</item>
+        <item>Spec FR1</item>
+        <item>Spec FR2</item>
+        <item>Expert FR</item>
+    </string-array>
+    <string-array name="prefs_07_mute" type="list">
+        <item>Off</item>
+        <item>On</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="prefs_08_tones" type="list">
+        <item>Standard</item>
+        <item>Loud</item>
+        <item>Mild</item>
+        <item>Standard Plus</item>
+    </string-array>
+    <string-array name="prefs_09_zr3mode" type="list">
+        <item>Off</item>
+        <item>Receive Only</item>
+        <item>Shift</item>
+    </string-array>
+    <string-array name="prefs_0A_voice" type="check">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="prefs_0B_speedalert" type="check">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="prefs_0C_autovolume" type="check">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="prefs_0D_autopower" type="list">
+        <item>Off</item>
+        <item>On</item>
+        <item>1 Hour</item>
+        <item>2 Hours</item>
+        <item>4 Hours</item>
+        <item>8 Hours</item>
+    </string-array>
+    <string-array name="prefs_0E_units" type="list">
+        <item>English</item>
+        <item>Metric</item>
+    </string-array>
+    <string-array name="prefs_0F_gps" type="check">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="prefs_10_autolearn" type="check">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="prefs_11_alertlamp" type="check">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="prefs_12_displayorientation" type="list">
+        <item>Standard</item>
+        <item>Inverted</item>
+    </string-array>
+    <string-array name="prefs_13_cruisealert" type="range">
+        <!-- 00 = off, (available values: 20,25,30,35 ... 150,155,160) -->
+    </string-array>
+    <string-array name="prefs_14_overspeedalert" type="range">
+        <!-- 00 = off, (available values: 20,25,30,35 ... 150,155,160) -->
+    </string-array>
+    <string-array name="prefs_15_language" type="list">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>Russian</item>
+        <item>Chinese</item>
+    </string-array>
+    <string-array name="prefs_16_color" type="list">
+        <item>Amber</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Copper</item>
+    </string-array>
+    <string-array name="prefs_17_speeddisplay" type="check">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string-array name="prefs_18_reserved1" type="check">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="prefs_19_reserved2" type="check">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string-array name="prefs_1A_usermode" type="list">
+        <item>Novice</item>
+        <item>Advanced</item>
+    </string-array>
+    <string-array name="prefs_1B_arrowmode" type="list">
+        <item>Off</item>
+        <item>Single</item>
+        <item>Multiple</item>
+        <item>Multiple with Lockout</item>
+        <item>Band</item>
+    </string-array>
+
+    <string-array name="pref_titles">
+        <item></item>
+        <item>Sensitivity</item>
+        <item>Brightness</item>
+        <item>Dark mode</item>
+        <item>Pilot mode</item>
+        <item>PowerOn sequence</item>
+        <item>Meter display</item>
+        <item>Mute mode</item>
+        <item>Audio tones</item>
+        <item>ZR3 shifter mode</item>
+        <item>Voice</item>
+        <item>Speed alert</item>
+        <item>Auto volume</item>
+        <item>Auto power off</item>
+        <item>Units</item>
+        <item>GPS</item>
+        <item>Autolearn</item>
+        <item>Alert lamp</item>
+        <item>Display</item>
+        <item>Cruise alert</item>
+        <item>Overspeed alert</item>
+        <item>Language</item>
+        <item>Display color</item>
+        <item>Speed display</item>
+        <item>Reserved1</item>
+        <item>Reserved2</item>
+        <item>User mode</item>
+        <item>Arrow mode</item>
+    </string-array>
+
+</resources>
