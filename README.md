@@ -12,7 +12,9 @@ Escort detectors support two types of communications: over USB and over Bluetoot
 <H2>Escort Bluetooth IO</H2>
 
 Escort detectors use a very packet-based simple protocol. Each packet is formatted as follows:
+<PRE>
 byte 0xF5 (start of packet)
 byte XX (length of the data in the packet, not all packets have data)
 byte CC Command identifier
 XX bytes of packet data (if present)
+</PRE>
